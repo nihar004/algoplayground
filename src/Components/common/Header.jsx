@@ -15,7 +15,8 @@ const Header = () => {
             : "border-zinc-700 shadow-zinc-600/20"
         }`}
       >
-        <div className="container mx-auto flex justify-between items-center">
+        {/* <div className="container mx-auto flex justify-between items-center"> */}
+        <div className="w-full px-1 mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4">
             <a href="#" className="flex items-center">
               <img src={logo} alt="logo" className="h-10 w-auto" />

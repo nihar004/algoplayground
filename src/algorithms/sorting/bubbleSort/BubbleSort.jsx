@@ -6,7 +6,7 @@ import { SortingProvider } from "../context/SortingContext";
 function BubbleSort() {
   return (
     <SortingProvider>
-      <main className="container mx-auto p-4 relative">
+      <main className="w-full mx-auto p-4 relative">
         {/* Left Panel (Fixed) */}
         <div className="absolute top-4 left-4 z-50">
           <SortingLeftPanel />
