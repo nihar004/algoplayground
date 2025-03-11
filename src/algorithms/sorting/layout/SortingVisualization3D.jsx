@@ -38,7 +38,7 @@ const FPSMonitor = ({ onFPSChange }) => {
 
 // Floor component (non-instanced to ensure visibility)
 const Floor = ({ position, color }) => {
-  const { scene } = useGLTF("/src/assets/models/floor_new.glb");
+  const { scene } = useGLTF("/models/floor_new.glb");
   const clonedScene = scene.clone();
 
   // Apply material color to all meshes in the scene
@@ -60,7 +60,7 @@ const Floor = ({ position, color }) => {
 const Building = React.memo(
   ({ value, position, color, isActive, isSwapping, performanceMode }) => {
     const groupRef = useRef();
-    const { scene } = useGLTF("/src/assets/models/base_new.glb");
+    const { scene } = useGLTF("/models/base_new.glb");
 
     // Use shader-based animation for performance
     const shakeAmount = useRef(0);
@@ -133,9 +133,9 @@ const Scene = ({ currentState, isDarkMode, performanceMode, size }) => {
 
   // Load textures with memoization
   const [colorMap, roughnessMap, normalMap] = useLoader(TextureLoader, [
-    "src/assets/tile_texture/Grass008_1K-JPG_Color.jpg",
-    "src/assets/tile_texture/Grass008_1K-JPG_Roughness.jpg",
-    "src/assets/tile_texture/Grass008_1K-JPG_NormalGL.jpg",
+    "/tile_texture/Grass008_1K-JPG_Color.jpg",
+    "/tile_texture/Grass008_1K-JPG_Roughness.jpg",
+    "/tile_texture/Grass008_1K-JPG_NormalGL.jpg",
   ]);
 
   // Apply texture settings only once
@@ -316,7 +316,7 @@ const SortingVisualization3D = () => {
 };
 
 // Preload models
-useGLTF.preload("/src/assets/models/floor_new.glb");
-useGLTF.preload("/src/assets/models/base_new.glb");
+useGLTF.preload("/models/floor_new.glb");
+useGLTF.preload("/models/base_new.glb");
 
 export default SortingVisualization3D;

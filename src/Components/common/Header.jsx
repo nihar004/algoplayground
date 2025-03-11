@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext";
-import logo from "../../assets/logo.png";
+import logo from "/logo.png";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
