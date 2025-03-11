@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { generateStates } from "../bubbleSort/stateManager";
+import { generateStates } from "../bubbleSort/StateManager";
 
 const SortingContext = createContext();
 
