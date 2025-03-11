@@ -1,7 +1,7 @@
 import { useTheme } from "../../../context/ThemeContext";
 import { Info, Copy, Check } from "lucide-react";
 import { useSorting } from "../context/SortingContext";
-import { languageHighlighting } from "../bubbleSort/languageHighlighting";
+import { languageHighlighting } from "../bubbleSort/LanguageHighlighting";
 import { useState, useRef, useEffect } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
