@@ -8,7 +8,12 @@ export const algorithms = {
       category: "Sorting",
       path: "/algorithms/sorting/bubbleSort/BubbleSort.jsx",
     },
-    // More algorithms...
+    {
+      id: "selection",
+      name: "Selection Sort",
+      category: "Sorting",
+      path: "/algorithms/sorting/selectionSort/SelectionSort.jsx",
+    },
   ],
   searching: [
     // Search algorithms...

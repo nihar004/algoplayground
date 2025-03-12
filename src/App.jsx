@@ -3,6 +3,7 @@ import { useTheme } from "./context/ThemeContext";
 import { WarningProvider } from "./context/WarningContext";
 import Warning from "./Components/common/Warning";
 import BubbleSort from "./algorithms/sorting/bubbleSort/BubbleSort";
+import { algorithms } from "./algorithms/registry/algo.js";
 
 function App() {
   const { isDarkMode } = useTheme();
@@ -15,7 +16,7 @@ function App() {
         } `}
       >
         {/* Header */}
-        <Header />
+        <Header category="Sorting" algoNames={algorithms.sorting} />
 
         <WarningProvider>
           {/* Global Warning Component */}
